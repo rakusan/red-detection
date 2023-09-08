@@ -159,7 +159,6 @@ function createFramebuffer(width, height) {
     console.log(status == gl.FRAMEBUFFER_COMPLETE);
 
     gl.bindTexture(gl.TEXTURE_2D, null);
-    gl.bindRenderbuffer(gl.RENDERBUFFER, null);
     gl.bindFramebuffer(gl.FRAMEBUFFER, null);
 
     return { fb: fb, fbTex: fbTex};
